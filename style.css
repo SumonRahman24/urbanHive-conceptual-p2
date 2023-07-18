@@ -230,8 +230,16 @@ nav a {
  ------------------------------------------------------*/
 @media screen and (max-width: 576px) {
   nav,
-  .logo {
+  .logo,
+  ul {
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
+  }
+  nav ul {
+    gap: 12px;
+  }
+
+  .logo img {
+    width: 50%;
   }
 }
