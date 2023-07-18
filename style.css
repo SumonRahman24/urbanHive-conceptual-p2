@@ -265,6 +265,23 @@ nav a {
   .products-container {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .discount-label {
+    left: 200px;
+    font-size: 20px;
+  }
+  .banner-btn {
+    font-size: 10px;
+  }
+  .icons {
+    font-size: 40px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+  }
+
+  .container {
+    padding: 20px;
+  }
 }
 
 /*------------------------------------------------------
