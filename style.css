@@ -247,14 +247,17 @@ nav a {
   .logo img {
     width: 50%;
   }
-  banner-img img {
-    display: none;
-  }
 
   /* banner */
   .banner-container {
     flex-direction: column-reverse;
     padding: 0 50px;
+  }
+  .banner-img img {
+    width: 100%;
+  }
+  .banner-content {
+    padding-left: 0;
   }
 
   /*card  */
@@ -275,5 +278,9 @@ nav a {
   }
   .discount-container {
     flex-direction: column;
+  }
+  .banner-container {
+    flex-direction: column-reverse;
+    padding: 0 50px;
   }
 }
