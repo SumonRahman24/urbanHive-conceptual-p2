@@ -1,0 +1,237 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+:root {
+  --primary: #9376e0;
+  --secondary: #e893cf;
+  --third: #e6e9eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+/* <-------------------
+----- [ Common Style ] ----
+    ---------------------> */
+.container {
+  padding: 8px 20px;
+}
+
+/* ================================================================ */
+
+/* <-------------------
+----- [ Navbar ] ----
+    ---------------------> */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 70px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.text-highlight {
+  color: var(--secondary);
+}
+
+.logo img {
+  width: 15%;
+}
+
+.logo-name {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.login-btn {
+  background: var(--secondary);
+  padding: 8px 15px;
+  font-size: 30px;
+  font-weight: 700;
+  border: none;
+}
+
+/* <-------------------
+----- [ banner ] ----
+    ---------------------> */
+
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--third);
+  margin: 50px auto;
+}
+
+.banner-img img {
+  width: 600px;
+  border-radius: 8px;
+}
+
+.banner-content {
+  padding-left: 150px;
+}
+
+.banner-content h2 {
+  font-size: 50px;
+  color: var(--primary);
+}
+
+.banner-content h3 {
+  font-family: "Caveat", cursive;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 25px auto;
+}
+
+.icons {
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+
+.icon i {
+  margin-left: 20px;
+}
+
+.banner-btn {
+  background: var(--third);
+  padding: 8px 16px;
+  display: inline;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: 400;
+  color: #000;
+  border: 2px solid var(--primary);
+  margin: 0 10px;
+}
+
+/* <-------------------
+----- [ Products Section ] ----
+    ---------------------> */
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.products-card {
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px gray;
+  background: var(--third);
+  padding: 15px;
+}
+
+.products-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-icons > i {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding: 7px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 22px;
+}
+
+.products-desc {
+  margin: 15px auto;
+}
+
+.products-img img {
+  width: 100%;
+}
+
+/* <-------------------
+----- [ Card Section ] ----
+    ---------------------> */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: var(--secondary);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.upper-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 15px;
+}
+
+.card-container img {
+  width: 25%;
+}
+
+/* 
+ <-------------------
+   ----- [ Discount Section ] ----
+            ---------------------> */
+.discount-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 20px;
+  background: var(--primary);
+}
+
+.discount-container img {
+  width: 100%;
+}
+
+.discount-content p {
+  margin: 20px auto;
+}
+
+.discount-label {
+  border-radius: 50%;
+  background: #808010;
+  padding: 25px 15px;
+  font-size: 30px;
+
+  position: absolute;
+  left: 280px;
+}
+
+/*------------------------------------------------------
+ =========> { Responsive Small Device } <============ 
+ ------------------------------------------------------*/
+@media screen and (max-width: 576px) {
+  nav,
+  .logo {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
